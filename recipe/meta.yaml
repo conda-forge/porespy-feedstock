@@ -30,8 +30,8 @@ requirements:
     - transforms3d
     - tqdm
     - numba
-    - dask
-    - openpnm >=2.5.1
+    - "dask[complete]"
+    - openpnm
     - edt
 
 test:
