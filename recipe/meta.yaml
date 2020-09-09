@@ -31,7 +31,7 @@ requirements:
     - tqdm
     - numba
     - dask
-    - openpnm
+    - openpnm >=2.5.1
     - edt
 
 test:
