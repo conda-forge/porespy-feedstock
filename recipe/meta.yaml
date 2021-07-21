@@ -1,5 +1,5 @@
 {% set name = "porespy" %}
-{% set version = "1.3.1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cc7ace0ddae5f46f3167d5723fdcd51a20c670b9e8acbbbf672618ee1f42a289
+  sha256: c7d8b1dab4cc396d32d22dd6291c148d754fa5dcad1c9937c0543231232220df
 
 build:
   number: 0
@@ -30,7 +30,7 @@ requirements:
     - transforms3d
     - tqdm
     - numba
-    - "dask[complete]"
+    - dask[complete]
     - openpnm
     - edt
 
