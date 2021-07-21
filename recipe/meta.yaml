@@ -19,7 +19,6 @@ requirements:
     - pip
     - python
   run:
-    - array_split
     - dask
     - edt
     - imageio
@@ -37,7 +36,6 @@ requirements:
     - scikit-image
     - scipy
     - tqdm
-    - transforms3d
     - trimesh
 
 test:
