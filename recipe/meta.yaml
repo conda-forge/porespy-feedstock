@@ -10,8 +10,8 @@ source:
   sha256: 266de7e5845c1324cf2b3e5ee2dc6ac524df0c65c55cf39a7d36b46ee6c907eb
 
 build:
-  number: 0
-  skip: true  # [py<37]
+  number: 1
+  skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -20,6 +20,7 @@ requirements:
     - python
   run:
     - dask
+    - deprecated
     - edt
     - imageio
     - loguru
