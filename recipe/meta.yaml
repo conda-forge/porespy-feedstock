@@ -1,5 +1,5 @@
 {% set name = "porespy" %}
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6f45cd547f95e3c9ef4aa7c0a4fab454e432c7333a0439070d858fb08cb48cd6
+  sha256: 3e00e661c90dc56c151344bf05da43c0f32ced23aba8a36fb920bad6b5187919
 
 build:
   number: 0
