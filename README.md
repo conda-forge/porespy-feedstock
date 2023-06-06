@@ -1,11 +1,11 @@
-About porespy
-=============
+About porespy-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/porespy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/PMEAL/porespy/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/porespy-feedstock/blob/main/LICENSE.txt)
 
 Summary: A set of tools for characterizing and analying 3D images of porous materials
 
