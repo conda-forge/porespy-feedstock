@@ -10,7 +10,7 @@ source:
   sha256: 104c82c6942b798ece026d66d947a0a259d43479131580617d9186513e7d2273
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,26 +21,23 @@ requirements:
   host:
     - pip
     - python
+    - hatchling
   run:
     - dask
     - deprecated
     - edt
-    - imageio
-    - loguru
     - matplotlib-base
     - numba
     - numpy
-    - numpy-stl
     - openpnm
     - pandas
     - psutil
-    - pyevtk
+    - rich
     - python
-    - scikit-fmm
     - scikit-image
     - scipy
     - tqdm
-    - trimesh
+    - pywavelets
 
 test:
   imports:
