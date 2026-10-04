@@ -1,5 +1,5 @@
 {% set name = "porespy" %}
-{% set version = "3.0.4" %}
+{% set version = "3.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7dee74d2772f092e422bd05304fc89a3d1ed424cecd770f8a56cc235824ef1c4
+  sha256: 7cdaf1baeff4ceafb2c767da06c11f446127504e20e42496d5fb23060f26d469
 
 build:
   number: 0
-  skip: true  # [py<311]
+  skip: true  # [py<311 or py>=314]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,22 +23,26 @@ requirements:
     - python
     - hatchling
   run:
+    - python
+    - connected-components-3d
     - dask
     - deprecated
-    - edt
+    - edt <3.1
+    - imageio
     - matplotlib-base
+    - matplotlib-inline >=0.1.7
     - numba
     - numpy
-    - openpnm
     - pandas
     - psutil
+    - pyevtk >=1.6.0
+    - pyvista >=0.46.4
     - rich
-    - python
-    - scikit-image
+    - scikit-image >=0.25.0
     - scipy
     - setuptools
+    - tomli >=2.2.1
     - tqdm
-    - pywavelets
 
 test:
   imports:
