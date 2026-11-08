@@ -1,5 +1,5 @@
 {% set name = "porespy" %}
-{% set version = "3.2.0" %}
+{% set version = "3.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c61b1ce119e6cd4881164cbd9981196d3991e1ac8adc067c6ae0aca2342ee3f9
+  sha256: 719e48436a8a9293cc882888bbe4c417fa8bc54ae903bcb72932f084bda963ec
 
 build:
   number: 0
